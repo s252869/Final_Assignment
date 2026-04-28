@@ -1,445 +1,403 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>The Quiet Housing Crisis — Iceland</title>
+  <title>The Price of a Home — Iceland</title>
 
   <style>
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
-      background: #faf8f3;
-      color: #1f2937;
-      line-height: 1.6;
+      font-family: Georgia, "Times New Roman", serif;
+      background: #f8f4ed;
+      color: #1f1f1f;
+      line-height: 1.65;
+    }
+
+    header, section, footer {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 70px 26px;
     }
 
     header {
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 90px 24px 60px;
+      padding-top: 95px;
+      border-bottom: 1px solid #d9cfc1;
     }
 
     .eyebrow {
       text-transform: uppercase;
       letter-spacing: 0.12em;
       font-size: 12px;
-      color: #8b7355;
+      color: #8b6f47;
       font-weight: bold;
-    }
-
-    h1 {
-      font-size: 52px;
-      line-height: 1.05;
-      margin: 16px 0;
-      max-width: 850px;
-    }
-
-    .dek {
-      font-size: 21px;
-      max-width: 720px;
-      color: #4b5563;
-    }
-
-    section {
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 70px 24px;
-      border-top: 1px solid #e5ded2;
-    }
-
-    h2 {
-      font-size: 32px;
       margin-bottom: 12px;
     }
 
-    p {
-      font-size: 18px;
-      max-width: 700px;
-    }
-
-    figure {
-      margin: 36px 0;
-      background: white;
-      padding: 18px;
-      border-radius: 18px;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.06);
-    }
-
-    figure img {
-      width: 100%;
-      display: block;
-      border-radius: 10px;
-    }
-
-    iframe {
-      width: 100%;
-      height: 560px;
-      border: none;
-      border-radius: 10px;
-      background: white;
-    }
-
-    figcaption {
-      margin-top: 12px;
-      font-size: 14px;
-      color: #6b7280;
-    }
-
-    .insight {
-      font-size: 24px;
-      font-weight: bold;
-      background: #1f2937;
-      color: white;
-      padding: 28px;
-      border-radius: 18px;
-      margin-top: 30px;
-    }
-
-    footer {
+    h1 {
+      font-size: clamp(38px, 6vw, 72px);
+      line-height: 1.02;
+      margin: 0 0 24px;
       max-width: 900px;
-      margin: 0 auto;
-      padding: 50px 24px;
-      color: #6b7280;
-      font-size: 14px;
     }
-  </style>
-</head>
 
-<body>
+    h2 {
+      font-size: clamp(28px, 4vw, 44px);
+      line-height: 1.12;
+      margin: 0 0 18px;
+    }
 
-<header>
-  <div class="eyebrow">Iceland · Housing · Young adults</div>
-  <h1>The quiet housing crisis: young Icelanders are staying home longer</h1>
-  <p class="dek">
-    Iceland’s housing pressure does not only show up in missed rent or mortgage payments.
-    It shows up earlier and more quietly: in young adults delaying independence.
-  </p>
-</header>
+    h3 {
+      font-size: 22px;
+      margin: 0 0 10px;
+    }
 
-<!-- MARTINI GLASS: AUTHOR-DRIVEN OPENING -->
-<section>
-  <div class="eyebrow">Act 1 · The hook</div>
-  <h2>Still at home in your late twenties?</h2>
-  <p>
-    Moving out is often seen as a milestone of adulthood. But for more young Icelanders,
-    especially those aged 25–29, that milestone appears to be delayed.
-  </p>
+    p {
+      font-size: 19px;
+      max-width: 760px;
+      margin: 0 0 18px;
+    }
 
-  <figure>
-    <img src="images/chart1_affordability.png" alt="Affordability chart">
-    <figcaption>
-      Figure 1. A static opening visual introduces the affordability gap.
-    </figcaption>
-  </figure>
-</section>
+    .dek {
+      font-size: 23px;
+      color: #4b5563;
+      max-width: 780px;
+    }
 
-<section>
-  <div class="eyebrow">Act 2 · The market shift</div>
-  <h2>When buying becomes harder, renting becomes the fallback</h2>
-  <p>
-    The housing market does not only affect prices. It changes the structure of everyday life:
-    who owns, who rents, and who remains dependent on family housing.
-  </p>
-
-  <figure>
-    <img src="images/chart2_tenure.png" alt="Tenure chart">
-    <figcaption>
-      Figure 2. Tenure status shows the shift between ownership and renting.
-    </figcaption>
-  </figure>
-</section>
-
-<!-- MARTINI GLASS: INTERACTIVE EXPLORATION -->
-<section>
-  <div class="eyebrow">Act 3 · Explore</div>
-  <h2>Tourism added pressure to an already tight housing market</h2>
-  <p>
-    The next visual lets the reader explore the seasonal shape of tourism pressure using
-    rental cars as a proxy.
-  </p>
-
-  <figure>
-    <iframe src="visualizations/chart3_heatmap.html"></iframe>
-    <figcaption>
-      Figure 3. Interactive heatmap of rental cars by month and year.
-    </figcaption>
-  </figure>
-</section>
-
-<section>
-  <div class="eyebrow">Act 4 · Explore</div>
-  <h2>Tourism and market-rate renting moved together</h2>
-  <p>
-    This comparison connects tourism growth to housing-market pressure.
-  </p>
-
-  <figure>
-    <iframe src="visualizations/chart4_dual.html"></iframe>
-    <figcaption>
-      Figure 4. Interactive comparison of rental car fleet size and market-rate renting.
-    </figcaption>
-  </figure>
-</section>
-
-<section>
-  <div class="eyebrow">Act 5 · Explore</div>
-  <h2>Age matters: young adults are hit before they even enter the market</h2>
-  <p>
-    Housing pressure is not experienced equally. Younger adults usually have lower income,
-    making the first step into independent housing especially difficult.
-  </p>
-
-  <figure>
-    <iframe src="visualizations/chart5_age_income.html"></iframe>
-    <figcaption>
-      Figure 5. Interactive age-income comparison.
-    </figcaption>
-  </figure>
-</section>
-
-<!-- MARTINI GLASS: AUTHOR-DRIVEN CONCLUSION -->
-<section>
-  <div class="eyebrow">Conclusion</div>
-  <h2>The crisis is quiet — but visible</h2>
-  <p>
-    The data does not tell a story of sudden collapse. Instead, it shows a slower pressure:
-    housing costs rise, renting becomes more common, and young adults adapt by delaying
-    independence.
-  </p>
-
-  <div class="insight">
-    Iceland’s housing crisis does not only show up when people miss payments.
-    It shows up when they cannot afford to leave home in the first place.
-  </div>
-</section>
-
-<footer>
-  Data: Statistics Iceland / Hagstofa Íslands.  
-  Visualizations created in Jupyter Notebook and embedded in this website.
-</footer>
-
-</body>
-</html><!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>The Quiet Housing Crisis — Iceland</title>
-
-  <style>
-    body {
-      margin: 0;
+    nav {
+      position: sticky;
+      top: 0;
+      background: rgba(248,244,237,0.96);
+      border-bottom: 1px solid #d9cfc1;
+      padding: 14px 24px;
+      z-index: 10;
+      display: flex;
+      gap: 22px;
+      overflow-x: auto;
       font-family: Arial, sans-serif;
-      background: #faf8f3;
-      color: #1f2937;
-      line-height: 1.6;
+      font-size: 14px;
     }
 
-    header {
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 90px 24px 60px;
-    }
-
-    .eyebrow {
-      text-transform: uppercase;
-      letter-spacing: 0.12em;
-      font-size: 12px;
-      color: #8b7355;
-      font-weight: bold;
-    }
-
-    h1 {
-      font-size: 52px;
-      line-height: 1.05;
-      margin: 16px 0;
-      max-width: 850px;
-    }
-
-    .dek {
-      font-size: 21px;
-      max-width: 720px;
+    nav a {
       color: #4b5563;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+
+    nav a:hover {
+      color: #111827;
     }
 
     section {
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 70px 24px;
-      border-top: 1px solid #e5ded2;
-    }
-
-    h2 {
-      font-size: 32px;
-      margin-bottom: 12px;
-    }
-
-    p {
-      font-size: 18px;
-      max-width: 700px;
+      border-bottom: 1px solid #d9cfc1;
     }
 
     figure {
-      margin: 36px 0;
-      background: white;
+      margin: 36px 0 16px;
+      background: #fffdf8;
+      border: 1px solid #e5dccf;
       padding: 18px;
       border-radius: 18px;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+      box-shadow: 0 12px 28px rgba(0,0,0,0.06);
     }
 
     figure img {
       width: 100%;
       display: block;
-      border-radius: 10px;
+      border-radius: 8px;
     }
 
     iframe {
       width: 100%;
-      height: 560px;
-      border: none;
-      border-radius: 10px;
-      background: white;
+      height: 620px;
+      border: 0;
+      border-radius: 8px;
+      background: #1c1814;
     }
 
     figcaption {
-      margin-top: 12px;
-      font-size: 14px;
+      font-family: Arial, sans-serif;
+      font-size: 15px;
+      color: #4b5563;
+      line-height: 1.6;
+      margin-top: 14px;
+    }
+
+    figcaption strong {
+      color: #111827;
+    }
+
+    .note {
+      font-family: Arial, sans-serif;
+      font-size: 15px;
       color: #6b7280;
+      background: #fffaf0;
+      border-left: 4px solid #b7791f;
+      padding: 16px 18px;
+      margin: 28px 0;
+      max-width: 760px;
     }
 
     .insight {
-      font-size: 24px;
-      font-weight: bold;
       background: #1f2937;
       color: white;
-      padding: 28px;
+      padding: 32px;
       border-radius: 18px;
-      margin-top: 30px;
+      font-size: 25px;
+      line-height: 1.45;
+      font-weight: bold;
+      margin-top: 34px;
+      max-width: 820px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 18px;
+      margin-top: 28px;
+    }
+
+    .card {
+      background: #fffdf8;
+      border: 1px solid #e5dccf;
+      border-radius: 16px;
+      padding: 22px;
+    }
+
+    .card .num {
+      font-family: Arial, sans-serif;
+      color: #8b6f47;
+      font-size: 13px;
+      font-weight: bold;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin-bottom: 8px;
     }
 
     footer {
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 50px 24px;
-      color: #6b7280;
+      font-family: Arial, sans-serif;
       font-size: 14px;
+      color: #6b7280;
     }
   </style>
 </head>
 
 <body>
 
-<header>
-  <div class="eyebrow">Iceland · Housing · Young adults</div>
-  <h1>The quiet housing crisis: young Icelanders are staying home longer</h1>
+<nav>
+  <a href="#intro">Intro</a>
+  <a href="#prices">Prices vs wages</a>
+  <a href="#tenure">Ownership vs renting</a>
+  <a href="#tourism">Tourism pressure</a>
+  <a href="#age">Age & income</a>
+  <a href="#conclusion">Conclusion</a>
+</nav>
+
+<header id="intro">
+  <div class="eyebrow">Iceland · Housing · 2000–2025</div>
+  <h1>The price of a home has moved faster than the people trying to buy one.</h1>
   <p class="dek">
-    Iceland’s housing pressure does not only show up in missed rent or mortgage payments.
-    It shows up earlier and more quietly: in young adults delaying independence.
+    This data story explores Iceland’s housing squeeze through wages, ownership, renting,
+    tourism pressure, and age. The main question is simple: why has entering the housing
+    market become harder, especially for young adults?
   </p>
 </header>
 
-<!-- MARTINI GLASS: AUTHOR-DRIVEN OPENING -->
 <section>
-  <div class="eyebrow">Act 1 · The hook</div>
-  <h2>Still at home in your late twenties?</h2>
+  <div class="eyebrow">Story design</div>
+  <h2>A martini glass structure</h2>
   <p>
-    Moving out is often seen as a milestone of adulthood. But for more young Icelanders,
-    especially those aged 25–29, that milestone appears to be delayed.
+    The story starts in a guided way: first, it shows the widening gap between house prices
+    and wages. Then it opens up into exploratory visualizations about tenure, tourism, and
+    age groups. Finally, it closes again with a guided interpretation of what the patterns
+    mean together.
+  </p>
+
+  <div class="note">
+    The purpose is not only to show that housing is expensive. The purpose is to explain
+    how different pressures combine: prices rise faster than wages, ownership becomes
+    harder, tourism adds demand, and young adults face the market with lower income.
+  </div>
+</section>
+
+<section id="prices">
+  <div class="eyebrow">01 · The affordability gap</div>
+  <h2>House prices grew faster than wages.</h2>
+  <p>
+    The first figure sets house prices and wages to the same starting point in 2000. This
+    makes the comparison easier to read: every line begins at 100, so the important thing is
+    how fast each one grows afterwards.
   </p>
 
   <figure>
-    <img src="images/chart1_affordability.png" alt="Affordability chart">
+    <img src="images/chart1_affordability.png" alt="House prices versus wages in Iceland, 2000 to 2024">
     <figcaption>
-      Figure 1. A static opening visual introduces the affordability gap.
+      <strong>Figure 1. House prices have significantly outpaced wages since 2000.</strong>
+      Both house prices and wages are indexed to 100 in 2000. By 2024, house prices reach
+      above 720, while the average wage reaches around 460. The gap is even larger for
+      younger age groups, especially people aged 25–29 and 30–34. The shaded area highlights
+      the affordability gap: the part of house-price growth that wages did not keep up with.
     </figcaption>
   </figure>
+
+  <p>
+    This is the core problem of the story. Icelanders are not simply facing “higher prices”;
+    they are facing prices that have grown faster than the income needed to pay for them.
+    For first-time buyers, this matters because they enter the market before they have had
+    time to build wealth or equity.
+  </p>
 </section>
 
-<section>
-  <div class="eyebrow">Act 2 · The market shift</div>
-  <h2>When buying becomes harder, renting becomes the fallback</h2>
+<section id="tenure">
+  <div class="eyebrow">02 · The market response</div>
+  <h2>When buying becomes harder, renting becomes the fallback.</h2>
   <p>
-    The housing market does not only affect prices. It changes the structure of everyday life:
-    who owns, who rents, and who remains dependent on family housing.
+    Housing affordability also changes how people live. If ownership becomes harder to reach,
+    more households remain renters or delay buying. Tenure status helps show this structural
+    shift.
   </p>
 
   <figure>
-    <img src="images/chart2_tenure.png" alt="Tenure chart">
+    <img src="images/chart2_tenure.png" alt="Ownership versus renting in Iceland, 2004 to 2022">
     <figcaption>
-      Figure 2. Tenure status shows the shift between ownership and renting.
+      <strong>Figure 2. Homeownership declined while market-rate renting increased after the financial crisis.</strong>
+      The stacked area chart shows how Icelandic households were distributed across ownership
+      and rental categories from 2004 to 2022. After the 2008 crash, ownership with a mortgage
+      fell and did not fully return to its earlier level. At the same time, market-rate renting
+      became more visible, especially in the years after the crisis. This suggests that
+      affordability pressure is not only about prices, but also about a shift in housing security.
     </figcaption>
   </figure>
+
+  <p>
+    This figure adds the second part of the story: the affordability gap does not stay abstract.
+    It changes the path into adulthood and homeownership.
+  </p>
 </section>
 
-<!-- MARTINI GLASS: INTERACTIVE EXPLORATION -->
-<section>
-  <div class="eyebrow">Act 3 · Explore</div>
-  <h2>Tourism added pressure to an already tight housing market</h2>
+<section id="tourism">
+  <div class="eyebrow">03 · The external pressure</div>
+  <h2>Tourism added pressure to an already tight housing market.</h2>
   <p>
-    The next visual lets the reader explore the seasonal shape of tourism pressure using
-    rental cars as a proxy.
+    The story then becomes exploratory. Instead of only looking at households, the next figure
+    looks at tourism pressure using registered rental cars as a proxy. This is not a perfect
+    measure of tourism, but it clearly captures the scale and seasonality of visitor activity.
   </p>
 
   <figure>
     <iframe src="visualizations/chart3_heatmap.html"></iframe>
     <figcaption>
-      Figure 3. Interactive heatmap of rental cars by month and year.
+      <strong>Figure 3. Tourism expanded rapidly and shows strong seasonal peaks.</strong>
+      The heatmap shows monthly rental car fleet size from 2011 to 2025. The growth from 2011
+      to 2018 is clear, with summer months becoming especially intense. The sharp drop around
+      2020 reflects the COVID-19 collapse in travel. This matters for the housing story because
+      tourism can increase demand for short-term accommodation, which may compete with long-term
+      rental supply.
     </figcaption>
   </figure>
-</section>
 
-<section>
-  <div class="eyebrow">Act 4 · Explore</div>
-  <h2>Tourism and market-rate renting moved together</h2>
   <p>
-    This comparison connects tourism growth to housing-market pressure.
+    The heatmap is useful because it does not just show growth; it shows rhythm. Iceland’s
+    tourism pressure is seasonal, peaking during summer, and that seasonal demand can still
+    affect a year-round housing market.
   </p>
 
   <figure>
     <iframe src="visualizations/chart4_dual.html"></iframe>
     <figcaption>
-      Figure 4. Interactive comparison of rental car fleet size and market-rate renting.
+      <strong>Figure 4. Tourism growth coincides with an increase in market-rate renting.</strong>
+      This figure compares rental car fleet size with the share of market-rate renters.
+      Both series rise during much of the 2011–2018 tourism boom. The figure should not be read
+      as proof that tourism alone caused higher renting, but it supports the interpretation
+      that tourism was one pressure among several in an already strained housing market.
     </figcaption>
   </figure>
+
+  <p>
+    This is the important storytelling point: tourism is not presented as the only cause.
+    It is presented as an accelerator. The housing market was already becoming harder to enter;
+    tourism added another layer of demand.
+  </p>
 </section>
 
-<section>
-  <div class="eyebrow">Act 5 · Explore</div>
-  <h2>Age matters: young adults are hit before they even enter the market</h2>
+<section id="age">
+  <div class="eyebrow">04 · The generational squeeze</div>
+  <h2>Young adults face the housing market before their income peaks.</h2>
   <p>
-    Housing pressure is not experienced equally. Younger adults usually have lower income,
-    making the first step into independent housing especially difficult.
+    The final exploratory figure focuses on age. This matters because the people most likely
+    to enter the housing market are not the people with the highest income. They are often in
+    their twenties or early thirties.
   </p>
 
   <figure>
     <iframe src="visualizations/chart5_age_income.html"></iframe>
     <figcaption>
-      Figure 5. Interactive age-income comparison.
+      <strong>Figure 5. Younger age groups struggle most to keep up with housing costs.</strong>
+      The bars show mean income by age group, while the dotted line represents the house-price
+      level scaled into the same income frame. As the slider moves forward in time, the house
+      price line separates from the younger age groups. By the later years, people aged 25–34
+      are far below the scaled house-price level. This shows why the affordability problem is
+      especially difficult for first-time buyers.
     </figcaption>
   </figure>
+
+  <p>
+    This figure connects the earlier charts back to people. The housing crisis is not just a
+    macroeconomic trend; it affects people at the exact stage of life when they are expected
+    to become independent.
+  </p>
 </section>
 
-<!-- MARTINI GLASS: AUTHOR-DRIVEN CONCLUSION -->
-<section>
+<section id="conclusion">
   <div class="eyebrow">Conclusion</div>
-  <h2>The crisis is quiet — but visible</h2>
+  <h2>The crisis is quiet, but visible.</h2>
   <p>
-    The data does not tell a story of sudden collapse. Instead, it shows a slower pressure:
-    housing costs rise, renting becomes more common, and young adults adapt by delaying
-    independence.
+    Taken together, the figures tell a story of delayed access rather than sudden collapse.
+    House prices rose faster than wages. Ownership became harder to reach. Tourism added
+    pressure to the rental market. Younger adults faced these conditions with lower income.
   </p>
+
+  <div class="grid">
+    <div class="card">
+      <div class="num">Finding 01</div>
+      <h3>Prices outgrew wages</h3>
+      <p>
+        The indexed comparison shows that house prices have grown much faster than wages since 2000.
+      </p>
+    </div>
+
+    <div class="card">
+      <div class="num">Finding 02</div>
+      <h3>Renting became more important</h3>
+      <p>
+        Tenure patterns suggest that households increasingly rely on renting when ownership becomes harder.
+      </p>
+    </div>
+
+    <div class="card">
+      <div class="num">Finding 03</div>
+      <h3>Young adults are squeezed first</h3>
+      <p>
+        Younger age groups enter the housing market before their income peaks, making them especially exposed.
+      </p>
+    </div>
+  </div>
 
   <div class="insight">
     Iceland’s housing crisis does not only show up when people miss payments.
-    It shows up when they cannot afford to leave home in the first place.
+    It shows up earlier: when young adults cannot afford to leave home in the first place.
   </div>
 </section>
 
 <footer>
-  Data: Statistics Iceland / Hagstofa Íslands.  
-  Visualizations created in Jupyter Notebook and embedded in this website.
+  <p>
+    Data sources: Statistics Iceland / Hagstofa Íslands. Visualizations created in Jupyter Notebook
+    and embedded as static images and interactive HTML files.
+  </p>
+  <p>
+    Visual narrative structure: Martini glass. The opening and conclusion are author-driven,
+    while the middle section allows reader exploration through interactive figures.
+  </p>
 </footer>
 
 </body>
